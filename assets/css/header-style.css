@@ -1,0 +1,93 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #263238;
+    height: 46px;
+    /*border-bottom: 1px solid #66757F;*/
+    z-index: 100;
+}
+.header button {
+    color: #F5F5F5;
+    background: none;
+    border-style: none;
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 80px;
+}
+.header button:hover {
+    color: #FAFAFA;
+    transform: scale(1.3);
+}
+.header-sign-buttons {
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 300px;
+
+}
+.header-logo {
+    width: 290px;
+}
+.header-logo h3, .header-logo h3>a {
+    font-family: 'Courgette', cursive;
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 26px;
+    width: 300px;
+}
+.header-logo img {
+    width: 30px;
+    height: 35px;
+    float: left;
+    margin: 5px;
+    margin-left: 10px;
+}
+.header a {
+    text-decoration: none;
+    color: #F5F5F5 !important;
+    cursor: pointer;
+}
+@media (max-width: 485px) {
+    .header-logo h3, .header-logo h3>a {
+        font-size: 19px;
+        width: 210px;
+        margin-top: 10px;
+    }
+    .header-logo img {
+        width: 20px;
+        height: 25px;
+        float: left;
+        margin: 5px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .header button {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 420px) {
+  .header button {
+      font-size: 12px;
+      transform: scale(1.1);
+      width: 60px;
+  }
+  .header-sign-buttons {
+  width: 70px;
+  margin-top: 3px;
+  margin-right: 0;
+    }
+}

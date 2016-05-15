@@ -1,0 +1,125 @@
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 200;
+}
+.overlay.show {
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.80);
+}
+.login-form-container {
+    display: none;
+    height: 0;
+    transition: all 0.5s ease-in-out;
+}
+.login-form-container.show {
+    margin: auto;
+    display: block;
+    opacity: 1;
+    width: 30%;
+    height: 50%;
+    background-color: #FAFAFA;
+    min-width: 360px;
+    overflow: auto;
+    border-radius: 25px 0px 0px 25px;
+}
+.signup-form-container {
+    display: none;
+    margin: auto;
+    height: 0;
+    transition: all 0.5s ease-in-out;
+}
+.signup-form-container.show {
+    margin: auto;
+    display: block;
+    width: 40%;
+    height: 70%;
+    background-color: #FAFAFA;
+    min-width: 360px;
+    overflow: auto;
+    border-radius: 25px 0px 0px 25px;
+}
+h1 {
+    text-align: center;
+    color: #424242;
+}
+.sign-form, .newpost-form, .form-about, .form-interests, .newcomment-form {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    text-align: left;
+    color: #424242;
+}
+.sign-form button, .newpost-form button, .form-about button, .form-interests button, .newcomment-form button {
+    width: auto;
+    height: 30px;
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 15px;
+    color: #424242;
+    font-size: 13px;
+    border-radius: 8px;
+    background-color: lightgrey;
+    box-shadow: 2px 3px 7px black;
+}
+.sign-form input, .newpost-form input, .form-about input, .form-interests input, .newcomment-form input {
+    width: 100%;
+    height: auto;
+    color: #424242;
+    margin-top: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+}
+label {
+    margin-top: 10px;
+}
+.error {
+    opacity: 0;
+    font-size: 0;
+    color: #F44336;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.error.show {
+    font-size: 18px;
+    opacity: 1;
+}
+.signup-form-container::-webkit-scrollbar, .login-form-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+
+.signup-form-container::-webkit-scrollbar-track, .login-form-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/* Handle */
+
+.signup-form-container::-webkit-scrollbar-thumb, .login-form-container::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #424242;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.radio-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.radio-buttons input[type=radio] {
+    margin-top: 16px;
+}

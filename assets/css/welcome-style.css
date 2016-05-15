@@ -1,0 +1,93 @@
+
+#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -200;
+    transform: translateX(-50%) translateY(-50%);
+    background: #000; 
+}
+.main-section {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    margin-top: 200px;
+}
+#intro {
+    font-size: 60px;
+    color: #fff;
+    animation: fadein 3s ease-in-out;
+}
+#description {
+    font-size: 35px;
+    color: #fff;
+    opacity: 0;
+    margin-top: -20px;
+    animation: fadein 4s forwards 2s;
+}
+.sign-buttons-container {
+    margin: auto;
+    width: 45%;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #fff;
+    opacity: 0;
+    animation: zoominfadein 3s forwards 3s;
+}
+#sign-up-button, #sign-in-button, #more {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    transition: font 0.3s ease-in-out;
+    color: #fff;
+}
+#sign-up-button {
+    border-left: 2px solid #EEEEEE;
+}
+#sign-up-button:hover, #sign-in-button:hover, #more:hover {
+    font-size: 26px;
+}
+#more, #more a {
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    text-decoration: underline;
+    opacity: 0;
+    animation: fadein 3s forwards 4s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes zoominfadein {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px) {
+  body {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../img/welcomebg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+    #bgvid {
+        display: none;
+    }
+}

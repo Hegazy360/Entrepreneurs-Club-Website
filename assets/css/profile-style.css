@@ -1,0 +1,253 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/profilebg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.home-container, .flex-row {
+    display: flex;
+    flex-direction: column;
+    animation: fadein .5s ease-in-out;
+}
+.flex-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    margin-top: 50px;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+        margin-top: -100px;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.profession {
+    margin: auto;
+
+}
+.user-overview {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: auto;
+    margin: auto;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 8px;
+    border: 1px solid #E1E8ED;
+    z-index: 50;
+}
+.admin-control {
+    border: 1px solid #E1E8ED;
+    box-shadow: 1px 1px 8px;
+    z-index: 40;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-right: 50px;
+    animation: fadein 1.4s forwards;
+    background-color: white;
+}
+.admin-control-form {
+    animation: fadein2 3s ease-in-out;
+}
+.admin-control-form button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.admin-control-form button:hover {
+    transform: scale(1.02);
+}
+@keyframes fadein2 {
+    0% {
+        position: absolute;
+        display: none;
+        opacity: 0;
+    }
+    35% {
+        position: relative;
+        opacity: 0;
+    }
+    50% {
+        display: inline;
+        opacity: 1;
+    }
+}
+.user-image, .user-info {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+.user-image-box {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    /*box-shadow: 1px 1px 8px;*/
+}
+.user-name {
+    margin: auto;
+    margin-top: 25px;
+    font-size: 28px;
+}
+.form-about, .form-interests, .form-contact {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 35px;
+    border: 1px solid #ced2d4;
+}
+.about-button, .interests-button {
+    width: auto;
+    margin-right: 0;
+    margin-top: -25px;
+    margin-left: auto;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+    float: right;
+}
+.about-button img, .interests-button img {
+    width: 20px;
+    height: 20px;
+}
+.about-button:hover, .interests-button:hover {
+    animation: rotate .5s ease-in-out;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    outline: none;
+}
+label, .form-contact h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    margin: auto;
+}
+.form-contact h3 {
+    margin-top: 2px;
+}
+.form-contact {
+    height: 90px;
+}
+.form-contact a {
+    margin: auto;
+}
+.profile-posts-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 700px;
+    overflow-y: auto;
+    border: 1px solid #ced2d4;
+}
+.profile-post {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex-shrink: 0;
+}
+.profile-post-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+.profile-post-header {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.profile-posts-container img {
+    width: 20px;
+    height: auto;
+}
+.profile-comments-counter {
+    margin-left: 1px;
+}
+.form-upload {
+    width: auto;
+    height: auto;
+    color: #333;
+}
+input {
+    color: #333;
+    margin: auto;
+}
+.form-upload input {
+    color: #333;
+    border: 1px solid #ced2d4;
+    margin-bottom: 10px;
+    display: flex;
+    font-weight: bold;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.form-upload input:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 1282px) {
+    .admin-control {
+        margin: auto;
+        margin-top: 0px;
+        width: 100%;
+    }
+}
+@media (max-width: 840px) {
+    .user-overview {
+        margin: auto;
+        margin-top: -37px;
+        width: 100%;
+        box-shadow: none;
+    }
+    .profile-posts-container {
+        width: 100%;
+    }
+    .admin-control {
+        margin: auto;
+        margin-top: 0px;
+        width: 100%;
+        height: auto;
+    }
+    .flex-row {
+      margin-top: 37px;
+    }
+}

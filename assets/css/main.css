@@ -1,0 +1,31 @@
+html, body { min-height: 100%; }
+
+body {
+    background-color: #FAFAFA;
+}
+body, input, button, a, textarea {
+    font-family: 'Fira Sans', sans-serif;
+    color: #333;
+}
+a {
+    text-decoration: none;
+}
+.home-container {
+    margin-top: 46px;
+}
+.home-container button {
+    background: none;
+    color: #333;
+    border-style: none;
+    cursor: pointer;
+    width: auto;
+}
+button:focus {
+    outline: 0px;
+}
+hr {
+    width: 90%;
+    background-color: #9E9E9E;
+    height: 1px;
+    border: 0;
+}
