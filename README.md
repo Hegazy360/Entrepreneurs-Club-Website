@@ -4,6 +4,9 @@
 #####Result : The project got the full grade 
 #####To Do : Further Improve Interface for mobile phones
 
+* Demo :
+  * A live version of the website can be found at **http://hegazy.byethost17.com/**
+
 * Used to complete this project : 
   * PHP
   * MySql
@@ -37,9 +40,6 @@
 
   * **Comment Section Example**
 <img src="https://raw.githubusercontent.com/Hegazy360/Entrepreneurs-Club-Website/master/screenshots/comments.PNG"/>
-
-* Demo :
-  * A live version of the website can be found at **http://hegazy.byethost17.com/**
 
 
 
